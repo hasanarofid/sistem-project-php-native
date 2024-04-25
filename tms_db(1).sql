@@ -120,7 +120,7 @@ CREATE TABLE `users` (
   `email` varchar(200) NOT NULL,
   `password` text NOT NULL,
   `type` tinyint(1) NOT NULL DEFAULT 2 COMMENT '1 = MARKETING, 2 = PM, 3 = ADMINISTRATION, 4 = PROCUREMENT, 5 = SITE MANAGER',
-  `avatar` text NOT NULL DEFAULT 'no-image-available.png',
+  `avatar` varchar(255) NOT NULL,
   `date_created` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

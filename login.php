@@ -1,3 +1,10 @@
+<style>
+  body {
+    background-image: url('assets/bg.jpeg');
+        background-size: contain;
+  }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <?php 
@@ -22,7 +29,7 @@ header("location:index.php?page=home");
 <body class="hold-transition login-page bg-orange">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#" class="text-white"><b><?php echo $_SESSION['system']['name'] ?></b></a>
+    <a href="#" class="text-black"><b><?php echo $_SESSION['system']['name'] ?></b></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
